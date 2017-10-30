@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 import random
-def jer(ap,yp,p):
+def jerin(ap,yp,p):
 	h=[]
 	for i in yp:
 		g=sum(map((lambda x,y:x*y),ap,i))			#singleSamplePerc
@@ -12,10 +12,10 @@ a=input("")
 y=[[1,2,7],[1,8,1],[1,7,5],[1,6,3],[1,7,8],[1,5,9],[1,4,5],
 [-1,-4,-2],[-1,1,1],[-1,-1,-3],[-1,-3,2],[-1,-5,-3.25],[-1,-2,-4],[-1,-7,-1]]
 k=0
-#print jer(a,y,0)
-while len(jer(a,y,0)):
+#print jerin(a,y,0)
+while len(jerin(a,y,0)):
 	#print "1"
-	t=jer(a,y,0)
+	t=jerin(a,y,0)
 	#print t
 	if y[k] in t:
 		new_a=map((lambda x,y:x+y),a,y[k])
