@@ -1,6 +1,6 @@
 import random
 from matplotlib import pyplot as plt
-def jer(ap,yp,p):
+def jerin(ap,yp,p):
 	h=[]
 	for i in yp:
 		g=sum(map((lambda x,y:x*y),ap,i))			#singlesampmargin
@@ -16,10 +16,10 @@ k=0
 eta=0.1
 #b=input("input b")
 b=input()
-#print jer(a,y,b)
-while len(jer(a,y,0)):
+#print jerin(a,y,b)
+while len(jerin(a,y,0)):
 	#print "1"
-	t=jer(a,y,b)
+	t=jerin(a,y,b)
 	#print t
 	if y[k] in t:
 		#eta=eta/k

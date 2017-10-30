@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 import random
-def jer(ap,yp,p):
+def jerin(ap,yp,p):
 	h=[]
 	for i in yp:
 		g=sum(map((lambda x,y:x*y),ap,i))
@@ -17,13 +17,13 @@ y.append([1,2,3])
 y.append([-1,-7,-8])
 eta=0.1
 b=input("input b")
-print jer(a,y,b)
+print jerin(a,y,b)
 theta=0.0001
 tmp=1
 while tmp>theta:
 	#print "1"
 	fg=0
-	t=jer(a,y,b)
+	t=jerin(a,y,b)
 	#print t
 	if y[k] in t:
 		#eta=eta/k

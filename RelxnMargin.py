@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 import random
-def jer(ap,yp,p):
+def jerin(ap,yp,p):
 	h=[]
 	for i in yp:
 		g=sum(map((lambda x,y:x*y),ap,i))			#RelaxationAlgmargin
@@ -14,10 +14,10 @@ y=[[1,2,7],[1,8,1],[1,7,5],[1,6,3],[1,7,8],[1,5,9],[1,4,5],
 k=0
 eta=0.1
 b=input("input b")
-#print jer(a,y,b)
-while len(jer(a,y,0)):
+#print jerin(a,y,b)
+while len(jerin(a,y,0)):
 	#print "1"
-	t=jer(a,y,b)
+	t=jerin(a,y,b)
 	#print t
 	#k = randint(0,len(y)-1)
 
